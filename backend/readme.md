@@ -1,4 +1,4 @@
-# iti0302-2023-backend
+# backend
 
 Welcome to the official repository for the Okidoki2 backend!
 
