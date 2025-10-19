@@ -1,4 +1,4 @@
-# iti0302-2023-frontend
+# frontend
 
 Welcome to the official repository for the Okidoki2 frontend!
 
