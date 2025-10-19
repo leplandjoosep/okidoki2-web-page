@@ -1,0 +1,27 @@
+stages:
+  - build
+  - deploy
+
+build-job:       # This job runs in the build stage, which runs first.
+  stage: build
+  only:
+    refs:
+      - main
+  tags:
+    - main
+  script:
+    - chmod +x gradlew
+    - ./gradlew build
+    - docker build -t okidoki .
+
+deploy-job:       # This job runs in the deploy stage, which runs second.
+  stage: deploy
+  only:
+    refs:
+      - main
+  tags:
+    - main
+  script:
+    - cd /opt/okidoki
+    - docker-compose down
+    - docker-compose up -d

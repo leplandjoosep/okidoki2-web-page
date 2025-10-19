@@ -1,0 +1,54 @@
+/* GetUsers.css */
+
+.userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.userTable th,
+.userTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.userTable th {
+    background-color: #f2f2f2;
+}
+
+.userTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.userTable tr:hover {
+    background-color: #f2f2f2;
+}
+
+
+.userTable button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.userTable button:hover {
+    background-color: #c82333;
+}
+
+.backButton {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.backButton:hover {
+    background-color: #0056b3;
+}

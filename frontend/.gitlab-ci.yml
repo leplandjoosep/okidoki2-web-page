@@ -1,0 +1,27 @@
+stages:
+  - build
+  - deploy
+
+build-job:
+  stage: build
+  only:
+    refs:
+      - main
+  tags:
+    - main
+  script:
+    - npm install
+    - npm run build
+    - docker build -t frontend .
+
+deploy-job:
+  stage: deploy
+  only:
+    refs:
+      - main
+  tags:
+    - main
+  script:
+    - cd /opt/frontend
+    - docker-compose down
+    - docker-compose up -d

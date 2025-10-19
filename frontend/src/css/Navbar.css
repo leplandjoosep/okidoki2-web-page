@@ -1,0 +1,28 @@
+/* App.css or another CSS file */
+
+.navbar {
+    background-color: #87352b; /* Dark background */
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.navbar button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+}
+
+.navbar button:hover {
+    background-color: #ddd;
+}
